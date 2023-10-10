@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', function() {
   const messageInput = document.getElementById('message-text');
   const sendButton = document.getElementById('send-button');
-  const chatWindow = document.querySelector('.chat-window');
+  const chatWindow = document.querySelector('.chat-window-all');
 
   messageInput.addEventListener('input', handleInput);
   sendButton.addEventListener('click', handleSend);
@@ -9,10 +9,10 @@ window.addEventListener('DOMContentLoaded', function() {
   function handleInput() {
     if (messageInput.value.trim() !== '') {
       sendButton.disabled = false;
-      sendButton.classList.add('active');
+      sendButton.classList.add('actived');
     } else {
       sendButton.disabled = true;
-      sendButton.classList.remove('active');
+      sendButton.classList.remove('actived');
     }
   }
 
@@ -26,7 +26,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
         messageInput.value = '';
         sendButton.disabled = true;
-        sendButton.classList.remove('active');
+        sendButton.classList.remove('actived');
 
         scrollToBottom();
       }
