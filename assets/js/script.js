@@ -81,7 +81,6 @@ function toggleChatStyle() {
 	chatElements.forEach((chatElement) => {
 		chatElement.classList.remove("active");
 	});
-
 	chat.classList.add("active");	
 	chatWindow.style.display = "block";
 	chatInfoblock.style.display = "block";
