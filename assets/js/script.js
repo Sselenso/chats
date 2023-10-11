@@ -67,12 +67,12 @@ function moveChatElement(event) {
 	}
 }
 
-
+const chatElementsSpec = document.querySelectorAll(".chat__list-spec");
 
 // Loop through each chat element
-chatElements.forEach((chatElement) => {
+chatElementsSpec.forEach((chatElement) => {
 	// Add double-click event listener to each chat element
-	chatElement.addEventListener("dblclick", toggleChatStyle);
+	chatElement.addEventListener("click", toggleChatStyle);
 });
 
 // Function to toggle chat style
