@@ -23,9 +23,10 @@
 					<div class="task-logo">=</div>
 					<div class="task-my">10</div>
 					<div class="task-all">34</div>
+					<div class="task-plus">+</div>
 				</div>
 				<div class="top__menu-telephone">
-					.
+					<img class="telepgone-icon" src="./assets/img/pngwing.com (12).png" alt="" srcset="">
 				</div>
 			</div>
 			<div class="top__menu-right">
@@ -41,21 +42,26 @@
 					<input type="text" class="search" placeholder="Поиск">
 				</div>
 				<div class="left__menu-list">
-					menu item
+					Избранное
 				</div>
 				<div class="left__menu-list">
-					menu item
+					Поиск пользователя
 				</div><div class="left__menu-list">
-					menu item
+					Таски
 				</div>
 				<div class="left__menu-list">
-					menu item
+					Свободные порты
 				</div><div class="left__menu-list">
-					menu item
+					Чаты
 				</div>
-
 				<div class="left__menu-list">
-					menu item
+					Отчеты
+				</div>
+				<div class="left__menu-list">
+					Настройки 
+				</div>
+				<div class="left__menu-list">
+					Выход
 				</div>
 			</div>
 	
@@ -64,7 +70,8 @@
 	    		<div class="top-section">
 			        <div class="specialist">
 			        	<div class="specialist-button">Специалист 1</div>
-				        <span class="chat-count"> 2</span>
+								<!-- <div class="specialist-chat-count">2</div> -->
+				        <span class="chat-count"> 2</span> 
 			        </div>
 							<div class="specialist">
 			        	<div class="specialist-button">Специалист 1</div>
@@ -175,11 +182,31 @@
 									</div>								
 								</div>
 	
-								<div class="message-input">
+								<div class="message-input">									
 									<textarea id="message-text" placeholder="Введите сообщение"></textarea>
+									<div class="file-button-block">
+										<img class="file-button" src="./assets/img/pngwing.com (2).png" alt="" srcset="">
+									</div>
+									<div class="emodji-button-block">
+										<img class="emodji-button" src="./assets/img/pngwing.com (3).png" alt="" srcset="">
+									</div>
 									<button class="send-button" id="send-button" disabled>Отправить</button>
 								</div>
-	
+								<div class="modal file-modal">
+									<div class="modal-content">
+										<!-- Содержимое модального окна загрузки файлов -->
+										<p>Модальное окно загрузки файлов</p>
+										<button class="modal-button">Загрузить файл</button>
+									</div>
+								</div>
+								
+								<div class="modal emodji-modal">
+									<div class="modal-content">
+										<!-- Содержимое модального окна с эмодзи -->
+										<p>Модальное окно с эмодзи</p>
+										<button class="modal-button">Выбрать эмодзи</button>
+									</div>
+								</div>
 	
 			        </div>
 		     </div>
@@ -227,6 +254,7 @@
 
     <script src="/assets/js/script.js"></script> 
 		<script src="./assets/js/input.js"></script>
+		<script src="./assets/js/modal.js"></script>
 
 </body>
 </html>
