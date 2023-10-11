@@ -1,5 +1,4 @@
 @import "_nullstyle";
-@import "_sky";
 @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap");
 :root {
@@ -7,17 +6,18 @@
 	--font-family2: "Montserrat", sans-serif;
 	--color--bg: rgba(231, 231, 231, 1);
 	--color--bg-100: rgba(243, 241, 241, 1);
+	--color-bg-block: rgb(255, 255, 255);
 	--color--text: rgba(136, 134, 134,1);
 	--color--border: rgba(215, 215, 215, 1);
-	--color--green: #66cc66;
-	--color--blue-100: rgba(58, 126, 182, 1);
-	--color--blue-200: #35add1;
+	--color--green: rgba(102, 204, 102,1.0);
+	--color--blue-100: rgba(58, 126, 182, 1.0);
+	--color--blue-200: rgb(53, 173, 209);
 	--color--yellow: rgba(255, 221, 0, 1);
 	--color-chat-user: rgba(58, 126, 182, 0.5);
 	--color-chat-spec: rgba(98, 116, 133, 1);
-	--color--black: #333333;
-	--color-border-list: #e0e0e0;
-	--color-body-shadow::#00000033;
+	--color--black: rgb(51, 51, 51);
+	--color-border-list: rgb(224, 224, 224);
+	--color-body-shadow: rgba(0, 0, 0, 0.2);
 }
 
 ::-webkit-scrollbar {
@@ -69,17 +69,19 @@ h3 {
 
 .page {
 	display: flex;
-	border-bottom: 1px solid var(--color--border);
+	//border-bottom: 1px solid var(--color--border);
 	height: 92vh;
 }
 .left__menu {
 	width: 15%;
-	height: 92vh;
-	border-right: 1px solid var(--color--border);
+	//height: 92vh;
+	//border-right: 1px solid var(--color--border);
+	//background-color: var(--color--bg);
 }
 .left__menu-list {
 	//height: 30px;
 	border-bottom: 1px solid var(--color--border);
+	border-right: 1px solid var(--color--border);
 	padding: 10px 22px;
 }
 .first__menu {
@@ -95,21 +97,25 @@ h3 {
 }
 //
 .main {
+	background-color: var(--color--bg);
 	//border: 1px solid var(--color--border);
 	width: 100%;
+	margin: 10px;
+    border-radius: 5px;
 }
 
 /* Верхняя часть */
 .top__section-wrap {
-	padding: 0 15px 0 15px;
+	padding: 10px 15px 0 15px;
 }
 .top-section {
-	height: 5vh;
+	min-height: 70px;
 	display: flex;
 	align-items: center;
-	//background-color: var(--color-chat-spec);
+	background-color: var(--color--bg-100)	;
 	border: 1px solid var(--color--border);
-	border-top: none;
+	border-radius: 5px;
+	margin-bottom: 10px;
 }
 .specialist {
 	position: relative;
@@ -118,7 +124,7 @@ h3 {
 .specialist-button {
 	width: 150px;
 	padding: 5px 10px;
-	background-color: var(--color--bg);
+	background-color: var(--color-bg-block);
 	color: var(--color--text);
 	border: 1px solid var(--color--border);
 	border-radius: 5px;
@@ -151,9 +157,9 @@ h3 {
 
 /* Нижняя часть */
 .bottom-section {
-	height: 88vh;
+	//height: 88vh;
 	display: grid;
-	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-columns: 1fr 2fr 1fr;	  
 	grid-gap: 10px;
 	margin: 0 15px;
 	//background: var(--color--bg);
@@ -163,10 +169,13 @@ h3 {
 
 /* Список чатов */
 .chat__zone {
-	//background-color: #f2f2f2;
+	background-color: var(--color-bg-block);
 	border: 1px solid var(--color--border);
-	border-top: none;
-	margin-bottom: 10px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	max-height: 94%;
+	
 }
 .chat__type {
 	display: flex;
@@ -235,7 +244,7 @@ h3 {
 	height: 74px;
 }
 .chat active{
-	background-color: var(--color--bg);
+	background-color: var(--color-bg-block);
 }
 
 .hidden {
@@ -285,13 +294,24 @@ h3 {
 }
 
 /* Поле сообщений */
-.chat-messages {
-	margin-top: 10px;
-	//margin-bottom: 10px;
+.chat-window-block{
+	min-height: 100%;
+}
+
+
+.chat-messages {	
+	display: flex;
+	flex-direction: column	;
+  //display: grid;
+	min-height: 94%;
+	max-height: 94%;
+  grid-template-rows: 8% 5% 70% 15%;
 }
 .chat__user-block{
+	background-color: var(--color--bg-100);
 	border: 1px solid var(--color--border);
-	height: 80px;
+	border-radius: 5px 5px 0 0;
+	min-height: 9vh;
 }
 .user__info {	
 	padding: 10px;
@@ -302,19 +322,27 @@ h3 {
 	align-items: center;
 	padding-top: 10px;
 }
+.chat__name{
+	color: var(--color--blue-100);
+	font-weight: bold;
+}
+
+
 .realtime-chat-button {
 	padding: 7px 10px;
 	background-color: var(--color--bg);
+	border: 1px solid var(--color--border);
 	color: var(--color--blue-100);
 	font-weight: bold;
-	border: none;
+	//border: none;
 	cursor: pointer;
 }
 .previous-chat-button {
-	padding: 8px 16px;
+	padding: 7px 10px;
 	background-color: var(--color--bg-100);
 	color: var(--color--text);
-	border: none;
+	border: 1px solid var(--color--border);
+	//border: none;
 	cursor: pointer;
 }
 .search__history {
@@ -331,7 +359,10 @@ h3 {
 // 	padding: 10px;
 // }
 .chat-window-all{
+	min-height: 94%;
+	max-height: 94%;
 	height: 60vh;
+	background-color: var(--color--bg-100);
 	border: 1px solid var(--color--border);
 	overflow-y: auto;
 	padding: 10px;
@@ -408,18 +439,21 @@ display: none;
 	display: flex;
 	height: 13vh;
 	border: 1px solid var(--color--border);
+	border-radius: 0 0 5px 5px ;
 	border-top: none;
 }
 .message-input textarea {
 	flex-grow: 1;
 	padding: 6px;
+	border-radius: 0 0 5px 5px;
 }
 .message-input button {
 	padding: 6px 12px;
-	background-color: var(--color--bg);
-	color: var(--color--bg-100);
+	background-color: var(--color--bg-100);
+	color: var(--color-bg-block);
 	font-weight: 600;
 	border: none;
+	border-radius: 0 0 5px 0;
 	cursor: pointer;
 }
 .message-input button.actived {
@@ -428,26 +462,24 @@ display: none;
 
 /* Информация о клиенте */
 .client-info {
-	//background-color: #f2f2f2;
-	height: 87vh;
+	background-color: var(--color-bg-block);
 	border: 1px solid var(--color--border);
-	border-top: none;
+	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
+	min-height: 94%;
+	max-height: 94%;
 	//justify-content: space-between;
 }
 .client-details-block{
-	height: 25%;
+	min-height: 30%;
 	border-bottom: 1px solid var(--color--border);
 }
 
 .client-details {
 	display: none;
-	text-align: center;
-	margin-bottom: 16px;
-	margin-top: 40px;
-	
-	
+	text-align: center;	
+	margin-top: 40px;		
 }
 .client__logo {
 	display: flex;
@@ -489,7 +521,7 @@ display: none;
 //шаблоны
 .response-templates {
 	padding: 20px;
-	height: 45%;
+	min-height: 48%;
 	border-bottom: 1px solid var(--color--border);
 }
 
@@ -503,31 +535,24 @@ display: none;
 }
 
 
-
-.chat-actions {
-	display: grid;	
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
-	
-}
 .action__button,
 .type__button {
 	display: flex;
 	justify-content: space-evenly;
-	margin-top: 40px;
+	margin-top: 20px;
 }
 .action__button{
-	border-bottom: 1px solid var(--color--border);
-	padding-bottom: 40px;
+	//border-bottom: 1px solid var(--color--border);
+	padding-bottom: 20px;
 }
 
 .release-chat-button,
 .close-chat-button,
 .support-button,
 .connection-button {
-	font-weight: 600;
+	font-weight: 500;
 	width: 150px;
-	padding: 8px 16px;
+	padding: 8px 15px;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;

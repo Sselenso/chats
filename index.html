@@ -8,7 +8,11 @@
 </head>
 <body>
 
-		<div class="top__menu"></div>
+		<div class="top__menu">
+			<div class="top__menu-left">
+				
+			</div>
+		</div>
 		<div class="page">
 			<div class="left__menu">
 				<div class="left__menu-list first__menu">
@@ -83,78 +87,80 @@
 							 <div class="chat__list-spec"></div>
 						</div>
 		       
-		        <div class="chat-messages">
-							<div class="chat__user-block">
-								<div class="user__info">
-									<div class="chat__name">Абонент								
+		     <div class="chat-window-block">
+		     	   <div class="chat-messages">
+								<div class="chat__user-block">
+									<div class="user__info">
+										<div class="chat__name">Абонент								
+										</div>
+					            <div class="chat-header">
+												<button class="realtime-chat-button">Текущий чат</button>
+					            							
+					                <button class="previous-chat-button">Прошлый чат</button>
+					            </div>
 									</div>
-				            <div class="chat-header">
-											<button class="realtime-chat-button">Текущий чат</button>
-				            							
-				                <button class="previous-chat-button">Прошлый чат</button>
-				            </div>
 								</div>
-							</div>
-							<div class="search__block">
-								<input type="text" class="search__history" placeholder="Поиск по чату">
-							</div>
-		            
-							<div class="chat-window-all">
-								<div class="chat-window">
-									<div class="message__user">
-										<div class="user-message">
-											<div class="message-info">
-												<span class="username">Абонент</span>
-												<span class="timestamp">10:30 AM</span>
-											</div>
-											<div class="message-text-user">
-												Привет, у меня есть несколько вопросов!
-											</div>
-										</div>
-									</div>
-									<div class="message__spec">
-										<div class="specialist-message">
-											<div class="message-info">
-												<span class="username">Специалист</span>
-												<span class="timestamp">10:35 AM</span>
-											</div>
-											<div class="message-text-spec">
-												Добрый день, Специалист. Конечно я готов ответитть на ваши вопросы, что конкретно вас интересует?
+								<div class="search__block">
+									<input type="text" class="search__history" placeholder="Поиск по чату">
+								</div>
+			            
+								<div class="chat-window-all">
+									<div class="chat-window">
+										<div class="message__user">
+											<div class="user-message">
+												<div class="message-info">
+													<span class="username">Абонент</span>
+													<span class="timestamp">10:30 AM</span>
+												</div>
+												<div class="message-text-user">
+													Привет, у меня есть несколько вопросов!
+												</div>
 											</div>
 										</div>
-									</div>
-									<div class="message__user">
-										<div class="user-message">
-											<div class="message-info">
-												<span class="username">Абонент</span>
-												<span class="timestamp">10:40 AM</span>
-											</div>
-											<div class="message-text-user">
-												Расскажите о ваших тарифа?
-											</div>
-										</div>
-									</div>
-									<div class="message__spec">
-										<div class="specialist-message">
-											<div class="message-info">
-												<span class="username">Специалист</span>
-												<span class="timestamp">10:45 AM</span>
-											</div>
-											<div class="message-text-spec">
-												У нас есть несколько тарифных линеек, посдкажите вам интерсен интернет или интернет и телевиденье?
+										<div class="message__spec">
+											<div class="specialist-message">
+												<div class="message-info">
+													<span class="username">Специалист</span>
+													<span class="timestamp">10:35 AM</span>
+												</div>
+												<div class="message-text-spec">
+													Добрый день, Специалист. Конечно я готов ответитть на ваши вопросы, что конкретно вас интересует?
+												</div>
 											</div>
 										</div>
+										<div class="message__user">
+											<div class="user-message">
+												<div class="message-info">
+													<span class="username">Абонент</span>
+													<span class="timestamp">10:40 AM</span>
+												</div>
+												<div class="message-text-user">
+													Расскажите о ваших тарифа?
+												</div>
+											</div>
+										</div>
+										<div class="message__spec">
+											<div class="specialist-message">
+												<div class="message-info">
+													<span class="username">Специалист</span>
+													<span class="timestamp">10:45 AM</span>
+												</div>
+												<div class="message-text-spec">
+													У нас есть несколько тарифных линеек, посдкажите вам интерсен интернет или интернет и телевиденье?
+												</div>
+											</div>
+										</div>								
 									</div>								
-								</div>								
-							</div>
-
-							<div class="message-input">
-								<textarea id="message-text" placeholder="Введите сообщение"></textarea>
-								<button class="send-button" id="send-button" disabled>Отправить</button>
-							</div>
-
-
-		        </div>
+								</div>
+	
+								<div class="message-input">
+									<textarea id="message-text" placeholder="Введите сообщение"></textarea>
+									<button class="send-button" id="send-button" disabled>Отправить</button>
+								</div>
+	
+	
+			        </div>
+		     </div>
 				
 		        <div class="client-info">
 		            <div class="client-details-block">
