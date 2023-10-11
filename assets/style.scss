@@ -469,7 +469,7 @@ h3 {
 	border: 1px solid var(--color--border);
 	color: var(--color--blue-100);
 	font-weight: bold;
-	//border: none;
+	border-radius: 5px 0 0 5px;
 	cursor: pointer;
 }
 .previous-chat-button {
@@ -477,7 +477,8 @@ h3 {
 	background-color: var(--color--bg-100);
 	color: var(--color--text);
 	border: 1px solid var(--color--border);
-	//border: none;
+	border-radius: 0 5px 5px 0;
+	margin-left: -2px;
 	cursor: pointer;
 }
 .search__history {
