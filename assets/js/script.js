@@ -137,11 +137,10 @@ function closeChat() {
     clientBlock.style.display = "none";
     chatAction.style.display = "none";
     messageTextSpec.style.display = "none";
+		searchCenter.style.display ="none";
   }
   closeConfirmPopup();
 }
-
-
 
 //Смена типа чата
 function changeChatType(color) {
@@ -204,6 +203,7 @@ function handleSpecialistButton(event) {
 			}
 			activeChat.remove();
 			messageTextSpec.remove();
+			searchCenter.style.display ="none";
 			chatWindow.style.display = "none";
 			chatInfoblock.style.display = "none";
 			clientBlock.style.display = "none";
