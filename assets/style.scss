@@ -772,6 +772,7 @@ h3 {
 	border: 1px solid var(--color--border);
 	padding: 2px;
 	border-radius: 4px;
+	cursor: pointer;
 }
 .response__search {
 	border: 1px solid var(--color--border);
@@ -940,4 +941,31 @@ h3 {
 }
 .yes{
 	color: var(--color--alert);	
+}
+
+
+
+.small-action-button img[data-tooltip]:hover::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fc0101;
+  color: #fff;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.small-action-button img[data-tooltip]:hover::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #333;
 }
