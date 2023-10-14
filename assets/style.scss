@@ -370,7 +370,6 @@ h3 {
 .chat__list-spec active {
 	display: block;
 }
-
 .chat {
 	position: relative;
 	display: flex;
@@ -405,10 +404,11 @@ h3 {
 	justify-content: center;
 	align-items: center;
 }
-.chat-timer {
+.chat__timer {
 	position: absolute;
 	top: 5px;
 	right: 20px;
+	font-size: 12px;
 }
 .chat-type-indicator {
 	background-color: var(--color--blue-200);
@@ -852,11 +852,11 @@ h3 {
 .support-button,
 .connection-button {
 	font-weight: 600;
-	padding: 5px 8px;
+	padding: 5px 10px;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-	font-size: 13px;
+	font-size: 12px;
 }
 
 .release-chat-button {
