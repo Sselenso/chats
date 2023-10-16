@@ -111,7 +111,6 @@ function releaseChat() {
 //Закрыть чат
 closeChatButton.addEventListener("click", showConfirmPopup);
 closeSmallButton.addEventListener("click", showConfirmPopup);
-
 confirmYesButton.addEventListener("click", closeChat);
 confirmNoButton.addEventListener("click", closeConfirmPopup);
 
