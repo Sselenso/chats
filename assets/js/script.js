@@ -1,16 +1,16 @@
 const myChatsButton = document.getElementById("general-chats-button");
 const allChatsButton = document.getElementById("my-chats-button");
-const chatListAll = document.querySelector(".chat__list-all");
-const chatListSpec = document.querySelector(".chat__list-spec");
+const chatListAll = document.querySelector(".chat-list-all");
+const chatListSpec = document.querySelector(".chat-list-spec");
 const greenBar = document.querySelector(".green-bar");
 const blueBar = document.querySelector(".blue-bar");
 const chatWindow = document.querySelector(".chat-window");
-const chatInfoblock = document.querySelector(".user__info");
+const chatInfoblock = document.querySelector(".user-info");
 const clientBlock = document.querySelector(".client-details");
 const chatAction = document.querySelector(".chat-actions-block");
 const chat = document.querySelector(".chat");
-const chatElements = document.querySelectorAll(".chat__list-all .chat");
-const chatElementsAll = document.querySelectorAll(".chat__list-all .chat");
+const chatElements = document.querySelectorAll(".chat-list-all .chat");
+const chatElementsAll = document.querySelectorAll(".chat-list-all .chat");
 const messageTextSpec = document.querySelector(".specialist-message");
 const supportButton = document.querySelector(".support-button");
 const connectionButton = document.querySelector(".connection-button");
@@ -21,7 +21,7 @@ const smallSales = document.querySelector(".small-sales");
 const closeSmallButton = document.querySelector(".small-close");
 const releaseSmallButton = document.querySelector(".small-transfer");
 const specialistButtons = document.querySelectorAll(".specialist-button");
-const searchCenter = document.querySelector(".search__center");
+const searchCenter = document.querySelector(".search-center");
 const confirmPopup = document.getElementById("confirmPopup");
 const confirmYesButton = document.getElementById("confirmYes");
 const confirmNoButton = document.getElementById("confirmNo");
@@ -67,7 +67,7 @@ function moveChatElement(event) {
 	}
 }
 
-const chatElementsSpec = document.querySelectorAll(".chat__list-spec");
+const chatElementsSpec = document.querySelectorAll(".chat-list-spec");
 chatElementsSpec.forEach((chatElement) => {
 	chatElement.addEventListener("click", toggleChatStyle);
 });
